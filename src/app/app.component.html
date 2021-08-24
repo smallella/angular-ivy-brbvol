@@ -1,0 +1,16 @@
+<form action="">
+  <fieldset>
+    <legend>被保險人</legend>
+    <p>
+      <label for="name">姓名:</label>
+      <input type="text" id="name" name="name" #nameNgModel="ngModel"
+      required minlength="2" maxlength="10" [ngModel]="insured.name">
+    </p>
+  </fieldset>
+  <p>
+    <label for="age">年齡:</label>
+    <select name="age" id="age" [(ngModel)]="age">
+
+    </select>
+  </p>
+</form>
